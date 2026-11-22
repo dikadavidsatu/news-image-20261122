@@ -1,13 +1,21 @@
 // One Image: Saturday 22 November 2026 — entrypoint.
 //
 // Verifies the submitted artifact (entry.png) against its data and its
-// manifest, then writes a deterministic run summary to output/summary.json.
+// manifest, then delivers the artifact to the grader: the verified PNG
+// bytes are copied to <MAKEFUN_OUTPUT_DIR>/entry.png together with a
+// deterministic run summary at <MAKEFUN_OUTPUT_DIR>/summary.json.
+//
 // The image itself is drawn by render.py from headlines.json; this file is
 // the grader-facing check that the PNG in the repo is exactly the front
 // page those headlines describe: right size, right dimensions, right hash,
 // and every rendered headline accounted for.
 //
-// Run: node main.ts   (exit 0 = artifact verified)
+// The grader runs this file in a fresh container with the repo mounted
+// READ-ONLY, so this program must never write into the repo directory —
+// every write goes to the output directory named by MAKEFUN_OUTPUT_DIR
+// (default "/output"). Verification itself is pure reads.
+//
+// Run: node main.ts   (exit 0 = artifact verified and delivered)
 
 import { createHash } from "node:crypto";
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
@@ -119,10 +127,32 @@ function main(): void {
     briefs: Math.min(8, data.briefs.length),
     status: "ok",
   };
-  mkdirSync(join(HERE, "output"), { recursive: true });
-  writeFileSync(join(HERE, "output", "summary.json"), JSON.stringify(summary, null, 1) + "\n");
+
+  // Deliver into the grader's output directory ONLY. The repo mount is
+  // read-only; the committed entry.png bytes are copied verbatim so the
+  // delivered file is byte-identical to the verified artifact, and a
+  // second run overwrites it with the same bytes (deterministic).
+  const outDir = process.env.MAKEFUN_OUTPUT_DIR ?? "/output";
+  const outPng = join(outDir, "entry.png");
+  try {
+    mkdirSync(outDir, { recursive: true });
+    writeFileSync(outPng, png);
+    writeFileSync(join(outDir, "summary.json"), JSON.stringify(summary, null, 1) + "\n");
+  } catch (err) {
+    fail(`could not write deliverables into ${outDir}: ${(err as Error).message}`);
+  }
+
+  // Read the delivered file back and prove it is the verified artifact:
+  // a short write or a filesystem quirk must fail loudly here rather
+  // than hand the judge a different image than the one just checked.
+  const delivered = readFileSync(outPng);
+  if (delivered.length !== png.length) {
+    fail(`delivered entry.png is ${delivered.length} bytes, expected ${png.length}`);
+  }
+  const deliveredSha = createHash("sha256").update(delivered).digest("hex");
+  if (deliveredSha !== sha) fail("delivered entry.png hash differs from the verified artifact");
   console.log(
-    `verified entry.png: ${width}x${height}, ${png.length} bytes, ${expected.length} news items, sha256 ${sha.slice(0, 16)}…`,
+    `verified entry.png: ${width}x${height}, ${png.length} bytes, ${expected.length} news items, sha256 ${sha.slice(0, 16)}… → ${outPng} (read-back verified)`,
   );
 }
 
