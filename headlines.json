@@ -1,0 +1,199 @@
+{
+  "edition": "The World Today — One Image Edition",
+  "date_line": "Saturday 22 November 2026",
+  "compiled": "Compiled from wire reports filed 21–22 Nov 2026, as of 03:20 UTC",
+  "lead": {
+    "kicker": "WAR IN EUROPE · NATO FRONTIER",
+    "headline": "Russian Missiles Hit Polish Soil; Trump Calls It a Mistake",
+    "deck": "Poland says Russian missiles struck its territory in the gravest spillover of the Ukraine war so far. NATO chief Mark Rutte vowed the alliance “will defend every inch of Polish territory”, while President Trump called the strike a mistake — leaving allies weighing how hard to respond.",
+    "source": "Washington Post · Reuters · Al Jazeera"
+  },
+  "second": {
+    "kicker": "MIDDLE EAST · GULF",
+    "headline": "Iranian Attack Sets Bahrain Industrial Site Ablaze",
+    "deck": "Bahrain reported no injuries after an Iranian attack set fire to an industrial facility; Tehran's IRGC said it targeted US military positions at bases in al-Riffa and Awali. Iran also struck three tankers as Houthi attacks continued across the region.",
+    "source": "Reuters · Al Jazeera · AP"
+  },
+  "sections": [
+    {
+      "name": "WORLD",
+      "color": "#1d4ed8",
+      "stories": [
+        {
+          "h": "Russian Cargo Ship Ablaze in Baltic After Drone Strike",
+          "d": "The crew fled a burning Russia-bound ship in the Gulf of Finland; Finland's PM: war is “spilling over”.",
+          "s": "Reuters"
+        },
+        {
+          "h": "Fossil-Fuel Fight Leaves COP31 Climate Talks in Deadlock",
+          "d": "Nearly 200 countries are deadlocked over a fossil-fuel phaseout, with diplomats racing for a compromise as the summit teeters on failure.",
+          "s": "BBC · The Guardian"
+        },
+        {
+          "h": "EU and Indonesia Sign Landmark Trade Deal",
+          "d": "Brussels and Jakarta signed a free-trade agreement after a decade of talks, covering goods from palm oil to pharmaceuticals.",
+          "s": "DW · Euronews"
+        },
+        {
+          "h": "Cartel Boss “El Chapo Isidro” Captured in Sinaloa Shoot-Out",
+          "d": "Mexican special forces arrested Fausto Isidro Meza Flores, an FBI 10 Most Wanted fugitive who had evaded capture for over a decade.",
+          "s": "BBC"
+        },
+        {
+          "h": "Bolsonaro in Intensive Care With Bowel Obstruction",
+          "d": "Brazil's former president, serving a sentence for plotting a coup, is stable and breathing on his own, his hospital said.",
+          "s": "Al Jazeera · Reuters"
+        }
+      ]
+    },
+    {
+      "name": "US & POLITICS",
+      "color": "#b91c1c",
+      "stories": [
+        {
+          "h": "Trump Orders Contractors to Clear Congressional Replies With White House",
+          "d": "Federal contractors must now clear replies to Congress with the White House — a new order.",
+          "s": "NPR · The Guardian"
+        },
+        {
+          "h": "Bessent Confirms He Is Living on a US Military Base Over Iran Fears",
+          "d": "The Treasury secretary confirmed the unusual security arrangement as the Iran conflict widens across the Gulf.",
+          "s": "Al Jazeera"
+        },
+        {
+          "h": "FBI Investigating Apparent Hack of Its Criminal Database",
+          "d": "The bureau is probing an apparent intrusion into a criminal database, the BBC reported early Saturday.",
+          "s": "BBC"
+        },
+        {
+          "h": "Trump Vows to Work With Democrats to Cap Credit-Card Interest Rates",
+          "d": "The president pledged bipartisan action on card rates as living-cost protests spread across Europe and the US.",
+          "s": "CBS News"
+        }
+      ]
+    },
+    {
+      "name": "BUSINESS & TECH",
+      "color": "#047857",
+      "stories": [
+        {
+          "h": "China's $1.7 Trillion AI Rout Turns a Hot Trade Into a Losing Bet",
+          "d": "US chip curbs hammered Chinese tech stocks; analysts call the bust a “moment of real danger” for Xi.",
+          "s": "Bloomberg"
+        },
+        {
+          "h": "Nvidia Said to Face SEC Probe Into Its Accounting Practices",
+          "d": "The chip giant is reportedly under scrutiny over its books, even as an associate is accused of funnelling its chips to China.",
+          "s": "New York Times · WSJ"
+        },
+        {
+          "h": "Anthropic IPO Signals “Beginning of a Gold Rush” for Small Business",
+          "d": "The AI lab's path to public markets is being read as a starting gun for a wave of AI listings and suppliers.",
+          "s": "Fox Business"
+        },
+        {
+          "h": "Bayer Reaches Roundup Settlement That Could Cost Billions",
+          "d": "The agreement would settle weedkiller cancer claims that have hung over the German group for years.",
+          "s": "NPR"
+        }
+      ]
+    },
+    {
+      "name": "SCIENCE & HEALTH",
+      "color": "#7c3aed",
+      "stories": [
+        {
+          "h": "SpaceX Dragon Cargo Capsule Returns to Earth From the ISS",
+          "d": "NASA's 35th resupply mission came home packed with science and cargo from the station.",
+          "s": "Space.com · NASA"
+        },
+        {
+          "h": "BepiColombo Arrives in Orbit Around Mercury After Eight Years",
+          "d": "The European-Japanese probe looped into orbit around the Sun's innermost planet; its X-ray telescope has already returned first images.",
+          "s": "Space.com · Phys.org"
+        },
+        {
+          "h": "Pancreatic Cancer Pill Hailed as “Biggest Breakthrough in Decades”",
+          "d": "A new drug combination stopped tumour growth in metastatic pancreatic cancer, a disease with few treatment options.",
+          "s": "NewsNation · The Guardian"
+        },
+        {
+          "h": "Virginia Child Dies in State's First Measles Death of 2026",
+          "d": "The death comes as a national outbreak costs the US the measles-elimination status it had held for 26 years.",
+          "s": "AP · The Guardian"
+        }
+      ]
+    },
+    {
+      "name": "SPORT",
+      "color": "#ea580c",
+      "stories": [
+        {
+          "h": "France 45–17 Argentina: Les Bleus March Into the Final",
+          "d": "France beat Los Pumas to set up a Nations Championship final against South Africa.",
+          "s": "BBC · The Guardian"
+        },
+        {
+          "h": "Rutgers Stuns Penn State for First Win Over the Lions Since 1988",
+          "d": "A last-second lateral near the goal line and a two-point conversion sealed a famous upset.",
+          "s": "Yahoo Sports"
+        },
+        {
+          "h": "Rams Star Puka Nacua Out 4–5 Months After Knee Surgery",
+          "d": "The wide receiver will be sidelined for the playoffs in a blow to Los Angeles.",
+          "s": "Yahoo Sports"
+        },
+        {
+          "h": "NWSL Championship: Washington Spirit Face Kansas City Current",
+          "d": "The league title is on the line in Saturday's final between the Spirit and the Current.",
+          "s": "The Guardian"
+        },
+        {
+          "h": "Sacramento Republic Beat Louisville City to Win USL Final",
+          "d": "Republic FC lifted the USL Championship trophy with victory over Louisville City FC.",
+          "s": "KCRA"
+        }
+      ]
+    },
+    {
+      "name": "CULTURE & ODDS",
+      "color": "#be185d",
+      "stories": [
+        {
+          "h": "Teen Gamer and His Mother Help Rescue a Missing Girl",
+          "d": "A teenager playing online and his quick-thinking mother helped police find a missing girl.",
+          "s": "BBC"
+        },
+        {
+          "h": "Lock of George Washington's Hair Sells for $4,000",
+          "d": "A lock of the first US president's hair changed hands at auction for four thousand dollars.",
+          "s": "BBC"
+        },
+        {
+          "h": "Miley Cyrus Marries Maxx Morando After Five Years of Dating",
+          "d": "The singer wed the drummer in a ceremony reported early Saturday.",
+          "s": "E! News"
+        }
+      ]
+    }
+  ],
+  "briefs": [
+    ["GAZA", "Displaced Palestinians protest as Israeli air strikes continue"],
+    ["FRANCE", "Clashes erupt across the country in another night of protest"],
+    ["TAIWAN", "Taipei warns Canada's Carney: deeper China ties carry risks"],
+    ["SINALOA", "Cartel boss “El Chapo Isidro” captured in shoot-out"],
+    ["UKRAINE", "Zelensky: Crimean Bridge strikes a “fair response”"],
+    ["BRASÍLIA", "Bolsonaro in intensive care with bowel obstruction"],
+    ["HEALTH", "Pancreatic cancer pill stops tumour growth in study"],
+    ["PERU", "Moviegoers flee their seats as earthquake strikes cinema"]
+  ],
+  "numbers": [
+    ["$1.7T", "wiped out in China's AI stock rout"],
+    ["45–17", "France's winning score over Argentina"],
+    ["TOP 10", "FBI Most Wanted: cartel boss captured"],
+    ["$4,000", "paid for a lock of Washington's hair"],
+    ["8 YEARS", "BepiColombo's journey to Mercury"],
+    ["~200", "nations deadlocked at COP31 talks"]
+  ],
+  "sources": "Washington Post · Reuters · AP · BBC · Al Jazeera · The Guardian · Bloomberg · New York Times · WSJ · NPR · CBS News · DW · Space.com · NASA · Yahoo Sports · E! News"
+}

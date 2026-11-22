@@ -1,0 +1,1 @@
+{"description":"One Image: Saturday 22 November 2026 — the day's world news in a single 1024x1024 PNG.","name":"news-image-20261122","private":true,"scripts":{"render":"python3 render.py","verify":"node main.ts"},"type":"module"}
